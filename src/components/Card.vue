@@ -8,8 +8,8 @@
         <CardTag v-for="tag in tags" :key="tag" :tag="tag" />
       </div>
       <div class="card__icons">
-        <i class="far fa-thumbs-up"></i> {{ image.likes }}
-        <i class="far fa-comment"></i> {{ image.comments }}
+        <img src="../assets/heart.svg" alt=""  class="card__icon"> {{ image.likes }}
+        <img src="../assets/speech-bubble.svg" alt=""  class="card__icon"> {{ image.comments }}
       </div>
     </div>
   </div>
@@ -68,6 +68,9 @@ export default {
   }
   &:hover {
     transform: scale(1.05);
+  }
+  &__icon {
+    width: 1rem;
   }
 }
 </style>

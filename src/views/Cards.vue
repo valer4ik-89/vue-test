@@ -27,7 +27,7 @@ export default {
   methods: {
     filterImages(val) {
       this.imageList = this.images.filter(image => {
-        return image.tags.includes(val);
+        return image.tags.includes(val.toLowerCase());
       });
     },
     sortImages(sortKey) {
